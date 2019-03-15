@@ -1,4 +1,4 @@
-# M2AA3 Introduction to Numerical Analysis
+# M345SC Scientific Computation with Python
 This is a course polishing skills in Python.
 
 ## Chapter Overview
