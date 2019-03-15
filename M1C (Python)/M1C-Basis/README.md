@@ -4,7 +4,7 @@ Welcome to the second half of the Mathematical Computation Course. This is an in
 ## Chapter Overview
 - Basis of Data Structures
 - Number Theory
-- Foundation of Numerical Analysis
+- Numerical Analysis I (Solution to Equations)
 
 ## Language Used
 - Python
