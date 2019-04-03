@@ -25,7 +25,7 @@ This is a repository for all the computing works done at Imperial College London
 
 ## Basic Git Command
 - 'git clone <url>' for cloning a repository in web (NOTE: Use 'shift-insert' for copying links!)
-- 'git add <file (press tab)> for adding a file from computer
+- 'git add <file (first (few) letter(s), then press tab)> for adding a file from computer
 - 'git commit -m (for suppressing notepad) "message" ' for commit
 - 'git push' for updating web repository 
 - 'git pull' for updating local repository 
