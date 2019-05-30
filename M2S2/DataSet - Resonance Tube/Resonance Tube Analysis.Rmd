@@ -1,0 +1,98 @@
+---
+title: "Resonance Tube Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+Imagine we fill a cylindrical tube with water. Assume the height of air column (region between the top of tube and water surface) is $h$ (in $m$). We use a tuning fork to produce some sound with frequency $f$ (in $Hz$). The sound produced is particularly loud when $$h = \alpha \frac{1}{f} + \beta + \epsilon$$
+
+where $\alpha$ (in $ms^{-1}$), $\beta$ (in $m$) are constants to be determined. Physics shows that $v = 4\alpha$ is the speed of sound. An experiment is thus conducted to determine $\alpha$ and $\beta$.
+
+## Import Data and Preparation
+- Import csv file through the function read.csv
+- Use 'attach' to attach variable names to the table. Now the names in the code are automatically referred to the corresponding variable names in the table. (You can use 'detach' to detach variable names from table if you wish.) 
+```{r car}
+# Import
+Resonance.Tube <- read.csv("C:/Users/User/Desktop/Github/Mathematical-Computing-Demo/M2S2/DataSet - Resonance Tube/Resonance Tube.csv")
+
+# Attach
+attach(Resonance.Tube)
+```
+
+## Including Plots
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r car, echo=FALSE}
+plot(finv,h)
+```
+
+## Linear Regression
+- Use lm(response variable ~ explanatory variables) to perform linear regression.
+- The summary of such dataframe (aka 'Analysis') contains the following
+  - Quartiles of Residuals
+  - Coefficients
+  - test statistic and p-value of t-test, testing whether an individual coefficient is zero.
+  - Sum of Square of Error (SSE)
+  - R-squared Values
+  - test statistic and p-value of F-test (ANOVA), testing whether constant model is appropriate.
+```{r car}
+Analysis <- lm(h ~ finv)
+summary(Analysis)
+```
+
+## Prediction
+- The function predict(Analysis) returns the vector of fitted values.
+- To obtain fitted values given values of explanatory variables (e.g. f = 310 Hz), we need to 
+  - Introduce a new data frame
+  - Use predict(Analysis, (data frame)) to find the fitted values
+  - To find the SD of the fitted values, turn on the se.fit option (se.fit=T) and obtain se.fit of FitvalSE (FitvalSE$se.fit).
+  - To find the (1-alpha)% confidence interval of fitted values, use predict(Analysis, (data frame), interval = 'confidence',      level = 1-alpha).
+```{r car}
+# Vector of Fitted Values
+FitVec <- predict(Analysis)
+View(FitVec)
+
+# Given f = 310, 
+New.Value <- data.frame(finv = (1/310))
+
+# find (1) fitted value 
+Fitval <- predict(Analysis, New.Value)
+View(Fitval)
+
+# find (2) SE of fitted value
+FitvalSE <- predict(Analysis, New.Value, se.fit = T)
+View(FitvalSE$se.fit)
+
+# (3) 90% confidence interval of fitted value
+FitCon <- predict(Analysis, New.Value, interval = 'confidence', level = 0.9)
+View(FitCon)
+```
+
+## Estimation of Speed of Sound
+```{r car}
+speed <- 4*Analysis$coefficients[2]
+View(speed)
+```
+The speed is 337 m/s, very close to the literature value (340 m/s)
+
+
+## Diagonistics
+The plot(Analysis) contains six plots: (You can choose which plots to see by selecting which = (a number/range of number))
+1. Residuals vs. Fitted Value
+2. Normal QQ Plot
+3. Square-root of Standardized Residuals and Fitted Values
+4. Cook's Distance of various observations
+5. Residuals vs. Leverage
+6. Cook's Distance vs. Leverage
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r car, echo=FALSE}
+plot(Analysis, which = 1:6)
+```
+
+From Plot (1) it seems that there is no correlation between variances of fitted values.
+From Plot (2) it seems that the data statisfies the assumption that the errors are normally distributed.
+These justify the use of a simple linear regression model
