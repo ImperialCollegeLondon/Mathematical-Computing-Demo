@@ -23,6 +23,11 @@ This is a repository for all the computing works done at Imperial College London
 - M345M3 Introduction to Partial Differential Equation
 - M345M6 Methods of Mathematical Physics
 
+## Statistics Courses
+- M1S/M2S1 Probability and Statistics
+- M2S2/M3S2 Statistical Modelling
+- M34S9 Stochastic Simulation
+
 ## Basic Git Command
 - 'git clone <url>' for cloning a repository in web (NOTE: Use 'shift-insert' for copying links!)
 - 'git add <file (first (few) letter(s), then press tab)> for adding a file from computer
