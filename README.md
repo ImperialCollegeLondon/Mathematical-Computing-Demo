@@ -15,18 +15,20 @@ This is a repository for all the computing works done at Imperial College London
 - M3C High Performance Computing
 - M345SC Scientific Computation
 - M345N7 Numerical Solution of ODE
-- M345N9 Computatioal Linear Algebra
 - M345N10 Computational PDE
 
 ### Mathematical Courses
-- M2AA3 Introduction to Numerical Analysis
+- M2AA3 + M345N9 Introduction to Numerical Analysis with Computational Linear Algebra
 - M345M3 Introduction to Partial Differential Equation
 - M345M6 Methods of Mathematical Physics
 
 ## Statistics Courses
 - M1S/M2S1 Probability and Statistics
 - M2S2/M3S2 Statistical Modelling
+- M34S8 Time Series
 - M34S9 Stochastic Simulation
+- M34S20 Statistical Learning
+- M345A50 Methods of Data Science
 
 ## Basic Git Command
 - 'git clone <url>' for cloning a repository in web (NOTE: Use 'shift-insert' for copying links!)
