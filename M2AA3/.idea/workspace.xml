@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8779b5e6-86e5-4813-a303-5be45cafdb3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/M2AA3-Applied-Linear-Algebra/Lesson 03/Cholesky.m" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Applied-Linear-Algebra/Lesson 03/Cholesky.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Least-Square/Lesson 02 Best Approximation Problem/.ipynb_checkpoints/Orthogonal Polynomial-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Least-Square/Lesson 02 Best Approximation Problem/.ipynb_checkpoints/Orthogonal Polynomial-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Least-Square/Lesson 02 Best Approximation Problem/Orthogonal Polynomial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Least-Square/Lesson 02 Best Approximation Problem/Orthogonal Polynomial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 01 - Basics/.ipynb_checkpoints/Largrange Interpolation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 01 - Basics/.ipynb_checkpoints/Largrange Interpolation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 01 - Basics/Largrange Interpolation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 01 - Basics/Largrange Interpolation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 02 - Newton Method/Newton Tableau.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 02 - Newton Method/Newton Tableau.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 04 - Quadrature/Gaussian Quadrature.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/M2AA3-Polynomials/Lesson 04 - Quadrature/Gaussian Quadrature.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1boKe9m38LiiQ6OyCYYC6jb7VGp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8779b5e6-86e5-4813-a303-5be45cafdb3e" name="Default Changelist" comment="" />
+      <created>1589293098893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589293098893</updated>
+    </task>
+    <servers />
+  </component>
+</project>
